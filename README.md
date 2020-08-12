@@ -24,11 +24,10 @@ The background of this dataset can be found in the following documentation:
 
 The goal is to generate a CSV file from public data source (IRS 990) data and load it into a data store that you created (S3 bucket) which we will connect to using s3 and Athena.
 
-_ **What is Athena?** _
+**What is Athena?**
+ ![](./images/screenshot_1.png)
+ ![](./images/screenshot_2.png) 
 
-| ![](./images/screenshot_1.png)
- | ![](./images/screenshot_2.png) |
-| --- | --- |
 
 ## Set up the Infrastructure and Create the Database
 

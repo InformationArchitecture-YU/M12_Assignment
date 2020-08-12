@@ -90,7 +90,7 @@ Follow the steps below to query the data stored in your s3 bucket.
 
 - **Step 1.** From the Athena &#39;Query Editor&#39; tab, navigate to your database and write the query that corresponds with your database:
 
-**SELECT \* FROM &quot;irs\_database&quot;.&quot;irs\_990\_data\_table&quot; limit 10;**
+```**SELECT \* FROM &quot;irs\_database&quot;.&quot;irs\_990\_data\_table&quot; limit 10;**```
 
 ![](./images/screenshot_9.png)
 

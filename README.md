@@ -33,7 +33,8 @@ The goal is to generate a CSV file from public data source (IRS 990) data and lo
 
 Note: many of these initial steps pertain to the Lab#4 process. You may have already completed them!
 
-The following depicts the framework we will create for this solution: ![](./images/screenshot_3.png)
+The following depicts the framework we will create for this solution:
+ ![](./images/framework.png)
 
 ## Part I. Load the data in S3 bucket
 
@@ -44,8 +45,8 @@ Now that you have set up the database connection, you will create an S3 bucket c
 - **Step 3.** For more information on how to create an S3 bucket, refer to the materials in class or follow this documentation [here](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html).
 
 See the s3 bucket below:
+ ![](./images/screenshot_3.png)
 
-![](./images/screenshot_4.png)
 
 **Confirmation: Save a screenshot of your output indicating you have completed this portion of the assignment**
 

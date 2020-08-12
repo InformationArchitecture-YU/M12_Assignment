@@ -58,9 +58,6 @@ Now that you have created your S3 bucket, you will need to load the data from IR
 - **Step 2.** Navigate to Athena from the AWS Management Console
 - **Step 3.** From the Athena console, navigate to the tab called &#39;Data Sources&#39;
 - **Step 4**. Select &#39;Connect data source&#39;
-
-![](RackMultipart20200812-4-yp8e74_html_23b1d2712d3cf26.png)
-
 - **Step 5.** From this screen, select Query data in S3 and select AWS Glue data catalog.
   - This allows you to use Glue and S3 as a data source. Here is where Athena and S3 act as a large clustered, file system much like HDFS.
 - **Step 6.** Select &quot;Set up Crawler in Glue&quot;
@@ -77,13 +74,11 @@ Now that you have created your S3 bucket, you will need to load the data from IR
 
 ![](./images/screenshot_7.png)
 
-- **Step 11**. You will want to store the output of contents of the crawler. Therefore, you&#39;ll need to create a database. Select &quot;Add database&quot; and give it a name from below:
-
-![](./images/screenshot_8.png)
+- **Step 11**. You will want to store the output of contents of the crawler. Therefore, you&#39;ll need to create a database. Select &quot;Add database&quot; and give it a name.
 
 - **Step 12.** Once saved, run the crawler on demand.
 
-![](./images/screenshot_9.png)
+![](./images/screenshot_8.png)
 
 **Confirmation: Save a screenshot of your output indicating you have completed this portion of the assignment**
 
@@ -97,7 +92,7 @@ Follow the steps below to query the data stored in your s3 bucket.
 
 **SELECT \* FROM &quot;irs\_database&quot;.&quot;irs\_990\_data\_table&quot; limit 10;**
 
-![](./images/screenshot_10.png)
+![](./images/screenshot_9.png)
 
 - **Step 2.** Using the Athena documentation, add a partition to your table based on FormType.
 

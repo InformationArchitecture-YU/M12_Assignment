@@ -26,15 +26,15 @@ The goal is to generate a CSV file from public data source (IRS 990) data and lo
 
 _ **What is Athena?** _
 
-| ![](RackMultipart20200812-4-yp8e74_html_ba45911eebda0b26.png)
- | ![](RackMultipart20200812-4-yp8e74_html_e3d56c55cde3ab85.png) |
+| ![](./images/screenshot_1.png)
+ | ![](./images/screenshot_2.png) |
 | --- | --- |
 
 ## Set up the Infrastructure and Create the Database
 
 Note: many of these initial steps pertain to the Lab#4 process. You may have already completed them!
 
-The following depicts the framework we will create for this solution: ![](RackMultipart20200812-4-yp8e74_html_3eb67e5f7ca9c8ff.png)
+The following depicts the framework we will create for this solution: ![](./images/screenshot_3.png)
 
 ## Part I. Load the data in S3 bucket
 
@@ -46,7 +46,7 @@ Now that you have set up the database connection, you will create an S3 bucket c
 
 See the s3 bucket below:
 
-![](RackMultipart20200812-4-yp8e74_html_932fed6aca83e861.png)
+![](./images/screenshot_4.png)
 
 **Confirmation: Save a screenshot of your output indicating you have completed this portion of the assignment**
 
@@ -66,24 +66,24 @@ Now that you have created your S3 bucket, you will need to load the data from IR
 - **Step 6.** Select &quot;Set up Crawler in Glue&quot;
 - **Step 7.** Set up a crawler with the name _M12\_Assignment\_Crawler_
 
-![](RackMultipart20200812-4-yp8e74_html_e9f63ca87f0330a0.png)
+![](./images/screenshot_5.png)
 
 - **Step 8.** Add a datastore and under the &quot;specified path for my account&quot;, put the path of the folder where your file is stored. Click next, and choose not to add any more data stores.
 
-![](RackMultipart20200812-4-yp8e74_html_6f98b142ddeb565.png)
+![](./images/screenshot_6.png)
 
 - **Step 9.** Choose the IAM role corresponding with access to administering Glue functions and connecting to S3. _Note: you would have created this in Lab 4._
 - **Step 10.** Create a schedule for your crawler and have it run daily. This will look for updated data in this folder daily.
 
-![](RackMultipart20200812-4-yp8e74_html_4395b8dd32ea1bc0.png)
+![](./images/screenshot_7.png)
 
 - **Step 11**. You will want to store the output of contents of the crawler. Therefore, you&#39;ll need to create a database. Select &quot;Add database&quot; and give it a name from below:
 
-![](RackMultipart20200812-4-yp8e74_html_b227d4e6b1e78d8a.png)
+![](./images/screenshot_8.png)
 
 - **Step 12.** Once saved, run the crawler on demand.
 
-![](RackMultipart20200812-4-yp8e74_html_2aaea0a1c4417668.png)
+![](./images/screenshot_9.png)
 
 **Confirmation: Save a screenshot of your output indicating you have completed this portion of the assignment**
 
@@ -97,7 +97,7 @@ Follow the steps below to query the data stored in your s3 bucket.
 
 **SELECT \* FROM &quot;irs\_database&quot;.&quot;irs\_990\_data\_table&quot; limit 10;**
 
-![](RackMultipart20200812-4-yp8e74_html_3eb17531f1194133.png)
+![](./images/screenshot_10.png)
 
 - **Step 2.** Using the Athena documentation, add a partition to your table based on FormType.
 

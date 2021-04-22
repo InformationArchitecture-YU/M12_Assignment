@@ -94,8 +94,6 @@ Follow the steps below to query the data stored in your s3 bucket.
 
 ![](./images/screenshot_9.png)
 
-- **Step 2.** Using the Athena documentation, add a partition to your table based on FormType.
-
 **Confirmation: Save a screenshot of your output indicating you have completed this portion of the assignment**
 
 ## Part IV. Answer questions by querying your data:
